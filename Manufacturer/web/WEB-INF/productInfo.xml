@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<products>
+    <product name="Brand1TV">
+        <manufacturerName>Brand1</manufacturerName>
+        <productType>TV</productType>
+        <unitPrice>800</unitPrice>
+    </product>
+
+    <product name="Brand1CAM">
+        <manufacturerName>Brand1</manufacturerName>
+        <productType>CAM</productType>
+        <unitPrice>125</unitPrice>
+    </product>
+
+    <product name="Brand1DVD">
+        <manufacturerName>Brand1</manufacturerName>
+        <productType>DVD</productType>
+        <unitPrice>40</unitPrice>
+    </product>
+    
+    <product name="Brand2TV">
+        <manufacturerName>Brand2</manufacturerName>
+        <productType>TV</productType>
+        <unitPrice>1000</unitPrice>
+    </product>
+
+    <product name="Brand2CAM">
+        <manufacturerName>Brand2</manufacturerName>
+        <productType>CAM</productType>
+        <unitPrice>150</unitPrice>
+    </product>
+
+    <product name="Brand2DVD">
+        <manufacturerName>Brand2</manufacturerName>
+        <productType>DVD</productType>
+        <unitPrice>50</unitPrice>
+    </product>
+    
+        <product name="Brand3TV">
+        <manufacturerName>Brand3</manufacturerName>
+        <productType>TV</productType>
+        <unitPrice>1200</unitPrice>
+    </product>
+
+    <product name="Brand3CAM">
+        <manufacturerName>Brand3</manufacturerName>
+        <productType>CAM</productType>
+        <unitPrice>175</unitPrice>
+    </product>
+
+    <product name="Brand3DVD">
+        <manufacturerName>Brand3</manufacturerName>
+        <productType>DVD</productType>
+        <unitPrice>60</unitPrice>
+    </product>
+</products>

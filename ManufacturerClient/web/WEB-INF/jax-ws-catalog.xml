@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebApplication1/ManufacturerWS?wsdl" uri="wsdl/localhost_8080/WebApplication1/ManufacturerWS.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication1/ManufacturerWS?xsd=1" uri="wsdl/localhost_8080/WebApplication1/ManufacturerWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Warehouse1/WarehouseWS?wsdl" uri="wsdl/localhost_8080/Warehouse1/WarehouseWS.wsdl"/>
+    <system systemId="http://localhost:8080/Warehouse1/WarehouseWS?xsd=1" uri="wsdl/localhost_8080/Warehouse1/WarehouseWS.xsd_1.xsd"/>
+</catalog>

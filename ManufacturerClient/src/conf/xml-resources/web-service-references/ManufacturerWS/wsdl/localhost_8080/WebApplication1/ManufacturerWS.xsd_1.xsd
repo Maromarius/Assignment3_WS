@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://manufacturer.org.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://manufacturer.org.com/">
+
+<xs:element name="getProductInfo" type="tns:getProductInfo"/>
+
+<xs:element name="getProductInfoResponse" type="tns:getProductInfoResponse"/>
+
+<xs:element name="processPurchasePrder" type="tns:processPurchasePrder"/>
+
+<xs:element name="processPurchasePrderResponse" type="tns:processPurchasePrderResponse"/>
+
+<xs:element name="receivePayment" type="tns:receivePayment"/>
+
+<xs:element name="receivePaymentResponse" type="tns:receivePaymentResponse"/>
+
+<xs:complexType name="processPurchasePrder">
+<xs:sequence>
+<xs:element name="purchaseOrder" type="tns:purchaseOrder" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchaseOrder">
+<xs:sequence>
+<xs:element name="customerRef" type="xs:string" minOccurs="0"/>
+<xs:element name="orderNum" type="xs:int"/>
+<xs:element name="product" type="tns:product" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+<xs:element name="unitPrice" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="manufacturerName" type="xs:string" minOccurs="0"/>
+<xs:element name="productType" type="xs:string" minOccurs="0"/>
+<xs:element name="unitPrice" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processPurchasePrderResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProductInfo">
+<xs:sequence>
+<xs:element name="productType" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProductInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receivePayment">
+<xs:sequence>
+<xs:element name="orderNumber" type="xs:int"/>
+<xs:element name="totalPrice" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receivePaymentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
